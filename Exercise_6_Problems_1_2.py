@@ -180,10 +180,10 @@ for i in range(len(data['DATE'])-1):
 
 
 for i in range(len(data['DATE'])-1):
-  if(i==0):#in case, i==0
+  if(i==0):#in case, i=0
     total_temp+=celsius_temp[i]
     day_count+=1
-  else:
+  else:#in case, i≠0
     if(month[i-1]!=month[i]):
       month_ave.append(total_temp/day_count)
       total_temp=celsius_temp[i]
